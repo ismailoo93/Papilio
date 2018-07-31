@@ -1,0 +1,54 @@
+.brand{
+	font-size: 30px;
+	display: inline-block;
+	margin-top: 5px;
+	color: #868aa8;
+	cursor: pointer;
+}
+
+.action{
+	background-color: transparent;
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	border: 1px solid transparent;
+	border-radius: 100%;
+	cursor: pointer;
+	transition: all .5s;
+	line-height: 40px;
+	text-align: center;
+}
+.action span{
+	font-size: 20px;
+}
+.action:hover{
+	background-color: #384AD7;
+	color: #fff;
+	transform: scale(1.2);
+}
+
+
+table tr td{
+	height: 75px;
+	line-height: 75px;
+}
+
+.a77,
+.a77_left{
+	list-style: none 	;
+}
+.a77 li,
+.a77_left{
+	display: inline-block;
+}
+.a77_left{
+	float: right;
+}
+.a77_left li{
+	float: left;
+}
+.a77_left span{
+	display: inline-block;
+	margin-top: 5.5px;
+	margin-right: 7.5px;
+}
