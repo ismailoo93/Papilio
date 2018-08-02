@@ -18,3 +18,11 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+/**
+ * Affiliate's Routes.
+ *
+ */
+Route::get('/affiliates', 'AffiliatesController@index');
+
+Route::get('/affiliates/{id}', 'AffiliatesController@show');
