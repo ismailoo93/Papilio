@@ -26,3 +26,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/affiliates', 'AffiliatesController@index');
 
 Route::get('/affiliates/{id}', 'AffiliatesController@show');
+
+Route::prefix('affiliates')->group(function () {
+    Route::get('/', 'AffiliatesController@index');
+    Route::get('{id}', 'AffiliatesController@show');
+    Route::delete('{id}', 'AffiliatesController@destroy');
+});

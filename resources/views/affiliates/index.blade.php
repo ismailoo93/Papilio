@@ -90,7 +90,8 @@
                                     <a href="/affiliates/{{ $affiliate->id }}">
                                         <button class="action"><span class="fa fa-eye"></span></button>
                                     </a>
-
+                                    <item-delete  :affiliate="'{!! json_encode($affiliate->id) !!}'" class="action">
+                                    </item-delete>
 
                                 </td>
                             </tr>

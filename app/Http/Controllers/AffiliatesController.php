@@ -38,6 +38,23 @@ class AffiliatesController extends Controller
         return view('affiliates.show', compact('affiliate'));
     }
 
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  $id
+     * @param Request $request
+     */
+    public function destroy($id, Request $request)
+    {
+        if($this->affiliate->destroy($id))
+        {
+            $request->session()->flash('success', 'Filiale supprimée avec succès');
+        }
+        else{
+            $request->session()->flash('error', "La filiale n'a pas été supprimée");
+        }
+    }
+
 
 
 
